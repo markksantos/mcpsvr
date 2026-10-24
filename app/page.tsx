@@ -8,7 +8,7 @@ import { useState, useMemo, useCallback } from "react";
 import ServerDialog from "@/components/server-dialog";
 import { cn, encodeBase64 } from "@/lib/utils";
 
-const cmdBgColor = (cmd: string) => {
+const cmdBgColor = (cmd?: string) => {
   switch (cmd) {
     case "npx":
       return "bg-blue-100";
